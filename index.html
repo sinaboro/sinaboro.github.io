@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sinaboro · 풀스택 개발 & 교육</title>
+<meta name="description" content="Java · Spring · React · DevOps · AI 를 가르치고 만드는 sinaboro 의 포트폴리오">
+<meta property="og:title" content="sinaboro · 풀스택 개발 & 교육">
+<meta property="og:description" content="Java · Spring · React · DevOps · AI 강의 저장소와 프로젝트 모음">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/91829565?v=4">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/91829565?v=4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="dot"></span>sinaboro</a>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#stack">기술</a>
+      <a href="#featured">프로젝트</a>
+      <a href="#demos">데모</a>
+      <a href="#timeline">강의 이력</a>
+      <a href="#repos">저장소</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="테마 전환">◐</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero wrap">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/91829565?v=4" alt="sinaboro 프로필">
+    <div>
+      <p class="eyebrow">Full-stack Developer · Instructor</p>
+      <h1>코드로 가르치고,<br><span class="grad">가르치며 만듭니다.</span></h1>
+      <p class="lead">Java · Spring Boot · React 부터 CI/CD, AWS, 그리고 LangGraph·LLM 까지.
+        개발자 양성과정에서 다룬 실습 코드와 프로젝트를 모두 공개하고 있습니다.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/sinaboro" target="_blank" rel="noopener">GitHub 방문</a>
+        <a class="btn" href="#featured">대표 프로젝트 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="wrap stats" id="stats">
+    <div class="stat"><b id="sRepos">89</b><span>공개 저장소</span></div>
+    <div class="stat"><b id="sYears">5</b><span>년째 활동 (2021~)</span></div>
+    <div class="stat"><b id="sFollowers">28</b><span>팔로워</span></div>
+    <div class="stat"><b id="sDemos">0</b><span>라이브 데모</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wrap section" id="about">
+    <h2>소개</h2>
+    <div class="about-grid">
+      <div class="card">
+        <h3>🧑‍🏫 개발자 양성과정 강의</h3>
+        <p>「AI를 이용한 스마트플랫폼 개발자 양성과정」, 클라우드·AWS 과정, 데이터 과정 등에서
+          HTML/CSS/JS → Java → JSP → Spring Framework → Spring Boot → React 로 이어지는 풀스택 커리큘럼을 진행해 왔습니다.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ DevOps & Cloud</h3>
+        <p>GitHub Actions, Jenkins, GitOps(ArgoCD 스타일 배포), Docker, AWS 배포, MSA 샘플까지 —
+          코드를 "배포되는 서비스"로 만드는 과정을 실습 중심으로 다룹니다.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI · LLM</h3>
+        <p>머신러닝/딥러닝 데이터 실습, FastAPI + React 연동, LangGraph 기반 에이전트,
+          로컬 LLM(Ollama) 활용 등 최신 AI 애플리케이션 개발로 영역을 넓히고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="wrap section" id="stack">
+    <h2>기술 스택 & 개발 환경</h2>
+    <div class="stack-grid">
+      <div>
+        <h4>Backend</h4>
+        <div class="chips">
+          <span>Java 11 / 17 / 21</span><span>Spring Framework</span><span>Spring Boot 3</span>
+          <span>Spring Security</span><span>JPA</span><span>MyBatis</span><span>JSP / Servlet</span>
+          <span>Python</span><span>FastAPI</span><span>Node.js</span>
+        </div>
+      </div>
+      <div>
+        <h4>Frontend</h4>
+        <div class="chips">
+          <span>HTML / CSS / JS</span><span>React 18</span><span>Redux Toolkit</span>
+          <span>React Router</span><span>Vue 3</span><span>TypeScript</span><span>Thymeleaf</span>
+        </div>
+      </div>
+      <div>
+        <h4>DevOps · Cloud</h4>
+        <div class="chips">
+          <span>GitHub Actions</span><span>Jenkins</span><span>GitOps</span><span>Docker</span>
+          <span>AWS</span><span>GitHub Pages</span><span>MSA</span>
+        </div>
+      </div>
+      <div>
+        <h4>AI · Data</h4>
+        <div class="chips">
+          <span>LangGraph</span><span>LLM</span><span>Ollama</span><span>Jupyter</span>
+          <span>머신러닝 / 딥러닝</span><span>R</span>
+        </div>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <div class="chips">
+          <span>IntelliJ IDEA</span><span>VS Code</span><span>DBeaver</span><span>Docker Desktop</span>
+          <span>Git</span><span>Xftp</span><span>Claude Code</span>
+        </div>
+      </div>
+      <div>
+        <h4>저장소 언어 분포</h4>
+        <div id="langBars" class="lang-bars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="wrap section" id="featured">
+    <h2>대표 프로젝트</h2>
+    <div class="grid" id="featuredGrid"></div>
+  </section>
+
+  <!-- DEMOS -->
+  <section class="wrap section" id="demos">
+    <h2>라이브 데모 <small>GitHub Pages 로 배포된 프로젝트</small></h2>
+    <div class="grid demos" id="demoGrid"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="wrap section" id="timeline">
+    <h2>연도별 강의 · 프로젝트 이력</h2>
+    <div id="timelineList" class="timeline"></div>
+  </section>
+
+  <!-- CONTRIBUTIONS -->
+  <section class="wrap section">
+    <h2>최근 1년 커밋 활동</h2>
+    <div class="card contrib">
+      <img src="https://ghchart.rshah.org/2f6feb/sinaboro" alt="sinaboro GitHub 커밋 그래프" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ALL REPOS -->
+  <section class="wrap section" id="repos">
+    <h2>전체 저장소 <small id="repoCount"></small></h2>
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="저장소 이름·설명 검색…">
+      <div id="filters" class="filters"></div>
+      <label class="chk"><input type="checkbox" id="hideForks" checked> 포크 숨기기</label>
+    </div>
+    <div class="grid small" id="repoGrid"></div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span id="yr"></span> sinaboro · 데이터는 GitHub API 에서 실시간으로 불러옵니다.</p>
+  <p><a href="https://github.com/sinaboro" target="_blank" rel="noopener">github.com/sinaboro</a></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
