@@ -146,3 +146,30 @@ h4 { margin: 0 0 10px; font-size: 14px; color: var(--muted); font-weight: 600; }
   .grid, .grid.small { grid-template-columns: 1fr; }
   .wrap { padding: 0 16px; }
 }
+
+/* PORTRAIT & PROFILE */
+.brand em { font-style: normal; font-weight: 500; color: var(--muted); font-size: 14px; }
+.hero { grid-template-columns: 300px 1fr; }
+.portrait { width: 300px; height: 300px; border-radius: 50%; overflow: hidden; position: relative;
+  background: linear-gradient(145deg, var(--accent), var(--accent2)); box-shadow: var(--shadow); }
+.portrait img { position: absolute; left: 50%; bottom: -4px; width: 104%; transform: translateX(-50%); display: block; }
+.who { margin: 0 0 10px; color: var(--muted); font-size: 15px; }
+.who b { color: var(--text); font-size: 18px; margin-right: 2px; }
+.profile-grid { display: grid; grid-template-columns: 1.1fr 1fr 1.3fr; gap: 14px; }
+.motto { display: flex; flex-direction: column; justify-content: space-between; gap: 20px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), color-mix(in srgb, var(--accent2) 12%, var(--surface))); }
+.motto .quote { font-size: 22px; font-weight: 800; line-height: 1.4; color: var(--text); }
+.years { display: flex; gap: 28px; }
+.years b { font-size: 38px; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+.years span { color: var(--muted); font-size: 14px; margin-left: 4px; }
+.list { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
+.list li { margin: 3px 0; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 220px 1fr; }
+  .portrait { width: 220px; height: 220px; }
+  .profile-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .hero { grid-template-columns: 1fr; }
+  .portrait { width: 200px; height: 200px; }
+}
